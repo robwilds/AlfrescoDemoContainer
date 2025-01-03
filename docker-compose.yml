@@ -33,8 +33,8 @@ services:
     image: wildsdocker/fileplanuploadadw5:v1
     volumes:
       - ./data/services/fileplanuploadadw5/app.config.json:/usr/share/nginx/html/app.config.json
-    ports:
-      - 4200:80
+    #ports:
+    #- 4200:80
     labels:
       - "traefik.enable=true"
       - "traefik.http.routers.fileplanuploadadw5.rule=PathPrefix(`/fileplanupload`)"
