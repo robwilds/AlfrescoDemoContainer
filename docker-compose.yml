@@ -25,9 +25,9 @@ services:
       protocol: "http"
       hostname: "alfresco:8080"
       port: 80
-    #volumes:
-    #- ${PWD}/data/app.config.json:/usr/local/app/static/app.config.json
-    #- ${PWD}/data/proxy.conf.js:/usr/local/app/proxy.conf.js
+    volumes:
+      - ./data/services/chimera/app.config.json:/usr/local/app/static/app.config.json
+      - ./data/services/chimera/proxy.conf.js:/usr/local/app/proxy.conf.js
     command: bash -c "npm install --legacy-peer-deps && npm start"
   fileplanuploadadw5:
     image: wildsdocker/fileplanuploadadw5:v1
