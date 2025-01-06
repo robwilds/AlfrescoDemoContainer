@@ -4048,3 +4048,339 @@ FILTERED CHANGE SETS SUMMARY
 06-Jan-2025 13:56:30.319 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/usr/local/tomcat/webapps/activiti-app] has finished in [145,577] ms
 06-Jan-2025 13:56:30.345 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
 06-Jan-2025 13:56:30.398 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [146555] milliseconds
+06-Jan-2025 14:07:16.712 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.17
+06-Jan-2025 14:07:16.768 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Dec 7 2023 23:31:38 UTC
+06-Jan-2025 14:07:16.770 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.17.0
+06-Jan-2025 14:07:16.771 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+06-Jan-2025 14:07:16.772 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            6.10.14-linuxkit
+06-Jan-2025 14:07:16.773 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+06-Jan-2025 14:07:16.775 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-17-openjdk-17.0.10.0.7-2.el9.x86_64
+06-Jan-2025 14:07:16.776 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           17.0.10+7-LTS
+06-Jan-2025 14:07:16.777 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Red Hat, Inc.
+06-Jan-2025 14:07:16.777 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /usr/local/tomcat
+06-Jan-2025 14:07:16.778 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /usr/local/tomcat
+06-Jan-2025 14:07:16.804 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent An older version [1.2.39] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [2.0.5]
+06-Jan-2025 14:07:16.805 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded Apache Tomcat Native library [1.2.39] using APR version [1.7.0].
+06-Jan-2025 14:07:16.864 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized [OpenSSL 3.0.7 1 Nov 2022]
+06-Jan-2025 14:07:19.919 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+06-Jan-2025 14:07:20.314 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [6636] milliseconds
+06-Jan-2025 14:07:20.890 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+06-Jan-2025 14:07:20.891 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.17]
+06-Jan-2025 14:07:21.182 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/usr/local/tomcat/webapps/activiti-app]
+06-Jan-2025 14:07:21.371 WARNING [main] org.apache.catalina.core.StandardContext.setPath A context path must either be an empty string or start with a '/' and do not end with a '/'. The path [/] does not meet these criteria and has been changed to []
+06-Jan-2025 14:07:31.521 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Jan-2025 14:08:16.361 INFO [main] liquibase.database.null Set default schema name to PUBLIC
+06-Jan-2025 14:08:23.679 INFO [main] liquibase.changelog.null Creating database history table with name: PUBLIC.DATABASECHANGELOG
+06-Jan-2025 14:08:24.235 INFO [main] liquibase.changelog.null Reading from PUBLIC.DATABASECHANGELOG
+06-Jan-2025 14:08:26.810 INFO [main] liquibase.lockservice.null Successfully acquired change log lock
+06-Jan-2025 14:08:26.970 INFO [main] liquibase.command.null Using deploymentId: 6172506966
+06-Jan-2025 14:08:26.977 INFO [main] liquibase.changelog.null Reading from PUBLIC.DATABASECHANGELOG
+06-Jan-2025 14:08:29.668 INFO [main] liquibase.changelog.null Table hibernate_sequences created
+06-Jan-2025 14:08:29.691 INFO [main] liquibase.changelog.null Table USERS created
+06-Jan-2025 14:08:29.704 INFO [main] liquibase.changelog.null Index idx_user_email created
+06-Jan-2025 14:08:29.710 INFO [main] liquibase.changelog.null Index idx_user_lastupdate created
+06-Jan-2025 14:08:29.719 INFO [main] liquibase.changelog.null Table GROUPS created
+06-Jan-2025 14:08:29.723 INFO [main] liquibase.changelog.null Table USER_GROUP created
+06-Jan-2025 14:08:29.730 INFO [main] liquibase.changelog.null Table GROUP_CAPABILITY created
+06-Jan-2025 14:08:29.737 INFO [main] liquibase.changelog.null Table TENANT_EVENT created
+06-Jan-2025 14:08:29.744 INFO [main] liquibase.changelog.null Index idx_tenant_event_createtime created
+06-Jan-2025 14:08:29.751 INFO [main] liquibase.changelog.null Table AUTHORITY created
+06-Jan-2025 14:08:29.758 INFO [main] liquibase.changelog.null Table USER_AUTHORITY created
+06-Jan-2025 14:08:29.772 INFO [main] liquibase.changelog.null Table PERSISTENT_TOKEN created
+06-Jan-2025 14:08:29.779 INFO [main] liquibase.changelog.null Index idx_user_authority created
+06-Jan-2025 14:08:29.791 INFO [main] liquibase.changelog.null Table MODEL created
+06-Jan-2025 14:08:29.796 INFO [main] liquibase.changelog.null Index idx_proc_mod_created created
+06-Jan-2025 14:08:29.817 INFO [main] liquibase.changelog.null Table FORM created
+06-Jan-2025 14:08:29.829 INFO [main] liquibase.changelog.null Table MODEL_HISTORY created
+06-Jan-2025 14:08:29.834 INFO [main] liquibase.changelog.null Index idx_proc_mod_history_proc created
+06-Jan-2025 14:08:29.847 INFO [main] liquibase.changelog.null Table STENCIL_SET created
+06-Jan-2025 14:08:29.860 INFO [main] liquibase.changelog.null Table STENCIL_SET_HISTORY created
+06-Jan-2025 14:08:29.871 INFO [main] liquibase.changelog.null Table STENCIL_SET_SHARE_INFO created
+06-Jan-2025 14:08:29.876 INFO [main] liquibase.changelog.null Index idx_stencil_set_share_user created
+06-Jan-2025 14:08:29.880 INFO [main] liquibase.changelog.null Index idx_stencil_set_share_by_user created
+06-Jan-2025 14:08:29.883 INFO [main] liquibase.changelog.null Index idx_stencil_set_share_process created
+06-Jan-2025 14:08:29.893 INFO [main] liquibase.changelog.null Table STENCIL_SET_USER_FAVORITE created
+06-Jan-2025 14:08:29.897 INFO [main] liquibase.changelog.null Index idx_stencil_user_favorite_id created
+06-Jan-2025 14:08:29.910 INFO [main] liquibase.changelog.null Table STENCIL_SET_COMMENT created
+06-Jan-2025 14:08:29.916 INFO [main] liquibase.changelog.null Index idx_stencil_comment_stencilset created
+06-Jan-2025 14:08:29.925 INFO [main] liquibase.changelog.null Table USER_FAVORITE created
+06-Jan-2025 14:08:29.933 INFO [main] liquibase.changelog.null Index idx_user_favorite_id created
+06-Jan-2025 14:08:29.942 INFO [main] liquibase.changelog.null Table MODEL_SHARE_INFO created
+06-Jan-2025 14:08:29.947 INFO [main] liquibase.changelog.null Index idx_proc_mod_share_user created
+06-Jan-2025 14:08:29.950 INFO [main] liquibase.changelog.null Index idx_proc_mod_share_by_user created
+06-Jan-2025 14:08:29.954 INFO [main] liquibase.changelog.null Index idx_proc_mod_share_process created
+06-Jan-2025 14:08:29.961 INFO [main] liquibase.changelog.null Table MODEL_COMMENT created
+06-Jan-2025 14:08:29.965 INFO [main] liquibase.changelog.null Index idx_proc_mod_comment_process created
+06-Jan-2025 14:08:29.971 INFO [main] liquibase.changelog.null Table EMAIL_ACTION created
+06-Jan-2025 14:08:29.983 INFO [main] liquibase.changelog.null Table IMAGE_UPLOAD created
+06-Jan-2025 14:08:29.992 INFO [main] liquibase.changelog.null Table COMMENTS created
+06-Jan-2025 14:08:29.996 INFO [main] liquibase.changelog.null Index comment_task_created created
+06-Jan-2025 14:08:30.000 INFO [main] liquibase.changelog.null Index comment_proc_created created
+06-Jan-2025 14:08:30.015 INFO [main] liquibase.changelog.null Table RELATED_CONTENT created
+06-Jan-2025 14:08:30.019 INFO [main] liquibase.changelog.null Index idx_relcont_createdby created
+06-Jan-2025 14:08:30.028 INFO [main] liquibase.changelog.null Index idx_relcont_taskid created
+06-Jan-2025 14:08:30.038 INFO [main] liquibase.changelog.null Index idx_relcont_procid created
+06-Jan-2025 14:08:30.051 INFO [main] liquibase.changelog.null Table USER_ACCOUNT created
+06-Jan-2025 14:08:30.057 INFO [main] liquibase.changelog.null Index idx_useracc_serv_own created
+06-Jan-2025 14:08:30.073 INFO [main] liquibase.changelog.null Table REPORT_DEFINITION created
+06-Jan-2025 14:08:30.082 INFO [main] liquibase.changelog.null Table PROCESSED_ACTIVITI_EVENTS created
+06-Jan-2025 14:08:30.090 INFO [main] liquibase.changelog.null Table TENANT created
+06-Jan-2025 14:08:30.099 INFO [main] liquibase.changelog.null Table RUNTIME_APP_DEF created
+06-Jan-2025 14:08:30.109 INFO [main] liquibase.changelog.null Unique constraint added to RUNTIME_APP_DEF(model_id)
+06-Jan-2025 14:08:30.114 INFO [main] liquibase.changelog.null Table RUNTIME_APP created
+06-Jan-2025 14:08:30.117 INFO [main] liquibase.changelog.null Index idx_runtime_app_user created
+06-Jan-2025 14:08:30.119 INFO [main] liquibase.changelog.null Index idx_runtime_app_def created
+06-Jan-2025 14:08:30.125 INFO [main] liquibase.changelog.null Table RUNTIME_APP_DEPLOYMENT created
+06-Jan-2025 14:08:30.131 INFO [main] liquibase.changelog.null Table CONTENT_RENDITION created
+06-Jan-2025 14:08:30.136 INFO [main] liquibase.changelog.null Index idx_cont_rend_content created
+06-Jan-2025 14:08:30.143 INFO [main] liquibase.changelog.null Unique constraint added to CONTENT_RENDITION(content_id, rendition_type)
+06-Jan-2025 14:08:30.153 INFO [main] liquibase.changelog.null Table SUBMITTED_FORM created
+06-Jan-2025 14:08:30.157 INFO [main] liquibase.changelog.null Index idx_submittedform_form_id created
+06-Jan-2025 14:08:30.161 INFO [main] liquibase.changelog.null Index idx_submittedform_task_id created
+06-Jan-2025 14:08:30.167 INFO [main] liquibase.changelog.null Table ALFRESCO_ENDPOINT created
+06-Jan-2025 14:08:30.182 INFO [main] liquibase.changelog.null Table IDM_SYNC_LOG created
+06-Jan-2025 14:08:30.190 INFO [main] liquibase.changelog.null Index idx_alf_endpoint_tenant_id created
+06-Jan-2025 14:08:30.240 INFO [main] liquibase.changelog.null Foreign key constraint added to USER_GROUP (user_id)
+06-Jan-2025 14:08:30.253 INFO [main] liquibase.changelog.null Foreign key constraint added to USER_GROUP (group_id)
+06-Jan-2025 14:08:30.262 INFO [main] liquibase.changelog.null Foreign key constraint added to MODEL_COMMENT (model_id)
+06-Jan-2025 14:08:30.270 INFO [main] liquibase.changelog.null Foreign key constraint added to MODEL_COMMENT (user_id)
+06-Jan-2025 14:08:30.277 INFO [main] liquibase.changelog.null Foreign key constraint added to USER_FAVORITE (user_id)
+06-Jan-2025 14:08:30.285 INFO [main] liquibase.changelog.null Foreign key constraint added to USER_FAVORITE (model_id)
+06-Jan-2025 14:08:30.290 INFO [main] liquibase.changelog.null Foreign key constraint added to STENCIL_SET_COMMENT (stencil_set_id)
+06-Jan-2025 14:08:30.294 INFO [main] liquibase.changelog.null Foreign key constraint added to STENCIL_SET_COMMENT (user_id)
+06-Jan-2025 14:08:30.299 INFO [main] liquibase.changelog.null Foreign key constraint added to STENCIL_SET_SHARE_INFO (user_id)
+06-Jan-2025 14:08:30.303 INFO [main] liquibase.changelog.null Foreign key constraint added to STENCIL_SET_SHARE_INFO (shared_by)
+06-Jan-2025 14:08:30.307 INFO [main] liquibase.changelog.null Foreign key constraint added to STENCIL_SET_SHARE_INFO (stencil_set_id)
+06-Jan-2025 14:08:30.317 INFO [main] liquibase.changelog.null Foreign key constraint added to MODEL_SHARE_INFO (user_id)
+06-Jan-2025 14:08:30.329 INFO [main] liquibase.changelog.null Foreign key constraint added to MODEL_SHARE_INFO (shared_by)
+06-Jan-2025 14:08:30.335 INFO [main] liquibase.changelog.null Foreign key constraint added to MODEL_SHARE_INFO (model_id)
+06-Jan-2025 14:08:30.342 INFO [main] liquibase.changelog.null Foreign key constraint added to USERS (tenant_id)
+06-Jan-2025 14:08:30.367 INFO [main] liquibase.changelog.null Foreign key constraint added to USERS (manager_user_id)
+06-Jan-2025 14:08:30.380 INFO [main] liquibase.changelog.null Foreign key constraint added to USERS (picture_image_id)
+06-Jan-2025 14:08:30.387 INFO [main] liquibase.changelog.null Foreign key constraint added to GROUPS (tenant_id)
+06-Jan-2025 14:08:30.403 INFO [main] liquibase.changelog.null Foreign key constraint added to GROUPS (parent_group_id)
+06-Jan-2025 14:08:30.415 INFO [main] liquibase.changelog.null Foreign key constraint added to USER_AUTHORITY (name)
+06-Jan-2025 14:08:30.427 INFO [main] liquibase.changelog.null Foreign key constraint added to USER_AUTHORITY (user_id)
+06-Jan-2025 14:08:30.432 INFO [main] liquibase.changelog.null Foreign key constraint added to PERSISTENT_TOKEN (user_id)
+06-Jan-2025 14:08:30.446 INFO [main] liquibase.changelog.null Foreign key constraint added to TENANT (logo_image_id)
+06-Jan-2025 14:08:30.454 INFO [main] liquibase.changelog.null Foreign key constraint added to EMAIL_ACTION (user_id)
+06-Jan-2025 14:08:30.460 INFO [main] liquibase.changelog.null Foreign key constraint added to ALFRESCO_ENDPOINT (tenant_id)
+06-Jan-2025 14:08:30.466 INFO [main] liquibase.changelog.null Foreign key constraint added to RUNTIME_APP_DEF (created_by)
+06-Jan-2025 14:08:30.480 INFO [main] liquibase.changelog.null Foreign key constraint added to RUNTIME_APP_DEF (model_id)
+06-Jan-2025 14:08:30.489 INFO [main] liquibase.changelog.null Foreign key constraint added to STENCIL_SET_USER_FAVORITE (user_id)
+06-Jan-2025 14:08:30.500 INFO [main] liquibase.changelog.null Foreign key constraint added to STENCIL_SET_USER_FAVORITE (stencil_set_id)
+06-Jan-2025 14:08:30.515 INFO [main] liquibase.changelog.null Foreign key constraint added to TENANT_EVENT (tenant_id)
+06-Jan-2025 14:08:30.537 INFO [main] liquibase.changelog.null Foreign key constraint added to TENANT_EVENT (user_id)
+06-Jan-2025 14:08:30.547 INFO [main] liquibase.changelog.null Foreign key constraint added to RELATED_CONTENT (created_by)
+06-Jan-2025 14:08:30.553 INFO [main] liquibase.changelog.null Foreign key constraint added to RELATED_CONTENT (last_modified_by)
+06-Jan-2025 14:08:30.559 INFO [main] liquibase.changelog.null Foreign key constraint added to RUNTIME_APP (app_user)
+06-Jan-2025 14:08:30.564 INFO [main] liquibase.changelog.null Foreign key constraint added to RUNTIME_APP (app_definition)
+06-Jan-2025 14:08:30.572 INFO [main] liquibase.changelog.null Foreign key constraint added to REPORT_DEFINITION (user_id)
+06-Jan-2025 14:08:30.580 INFO [main] liquibase.changelog.null Foreign key constraint added to CONTENT_RENDITION (content_id)
+06-Jan-2025 14:08:30.582 INFO [main] liquibase.changelog.null ChangeSet META-INF/liquibase/db-changelog-onpremise.xml::1::tijsrademakers ran successfully in 949ms
+06-Jan-2025 14:08:30.844 INFO [main] liquibase.changelog.null Column RELATED_CONTENT.temporary dropped
+06-Jan-2025 14:08:30.877 INFO [main] liquibase.changelog.null Column RELATED_CONTENT.preview_status dropped
+06-Jan-2025 14:08:30.906 INFO [main] liquibase.changelog.null Column RELATED_CONTENT.thumbnail_status dropped
+06-Jan-2025 14:08:30.907 INFO [main] liquibase.changelog.null ChangeSet META-INF/liquibase/db-changelog-onpremise.xml::2::tijsrademakers ran successfully in 141ms
+06-Jan-2025 14:08:31.016 INFO [main] liquibase.changelog.null Columns group_id(bigint) added to MODEL_SHARE_INFO
+06-Jan-2025 14:08:31.023 INFO [main] liquibase.changelog.null Index idx_mod_share_group created
+06-Jan-2025 14:08:31.070 INFO [main] liquibase.changelog.null Columns group_id(bigint) added to STENCIL_SET_SHARE_INFO
+06-Jan-2025 14:08:31.076 INFO [main] liquibase.changelog.null Index idx_stencil_share_group created
+06-Jan-2025 14:08:31.077 INFO [main] liquibase.changelog.null ChangeSet META-INF/liquibase/db-changelog-onpremise.xml::3::tijsrademakers ran successfully in 118ms
+06-Jan-2025 14:08:31.210 INFO [main] liquibase.changelog.null USERS.external_id datatype was changed to varchar(255)
+06-Jan-2025 14:08:31.219 INFO [main] liquibase.changelog.null Index idx_user_ext_id created
+06-Jan-2025 14:08:31.515 INFO [main] liquibase.changelog.null Columns external_original_src(varchar(2000)) added to USERS
+06-Jan-2025 14:08:31.518 INFO [main] liquibase.changelog.null ChangeSet META-INF/liquibase/db-changelog-onpremise.xml::4::activiti ran successfully in 426ms
+06-Jan-2025 14:08:31.580 INFO [main] liquibase.changelog.null Table MODEL_RELATION created
+06-Jan-2025 14:08:31.607 INFO [main] liquibase.changelog.null Foreign key constraint added to MODEL_RELATION (parent_model_id)
+06-Jan-2025 14:08:31.626 INFO [main] liquibase.changelog.null Foreign key constraint added to MODEL_RELATION (model_id)
+06-Jan-2025 14:08:31.634 INFO [main] liquibase.changelog.null Table APP_RELATION created
+06-Jan-2025 14:08:31.644 INFO [main] liquibase.changelog.null Foreign key constraint added to APP_RELATION (runtime_app_id)
+06-Jan-2025 14:08:31.654 INFO [main] liquibase.changelog.null Foreign key constraint added to APP_RELATION (model_id)
+06-Jan-2025 14:08:31.657 INFO [main] liquibase.changelog.null ChangeSet META-INF/liquibase/db-changelog-onpremise.xml::5::activiti ran successfully in 89ms
+06-Jan-2025 14:08:31.727 INFO [main] liquibase.changelog.null Table ENDPOINT_BASIC_AUTH created
+06-Jan-2025 14:08:31.731 INFO [main] liquibase.changelog.null Index idx_endp_basic_auth_tenant created
+06-Jan-2025 14:08:31.739 INFO [main] liquibase.changelog.null Table ENDPOINT_CONFIGURATION created
+06-Jan-2025 14:08:31.743 INFO [main] liquibase.changelog.null Index idx_endp_conf_tenant created
+06-Jan-2025 14:08:31.750 INFO [main] liquibase.changelog.null Foreign key constraint added to ENDPOINT_CONFIGURATION (basic_auth)
+06-Jan-2025 14:08:31.751 INFO [main] liquibase.changelog.null ChangeSet META-INF/liquibase/db-changelog-onpremise.xml::6::yvoswillens ran successfully in 41ms
+06-Jan-2025 14:08:31.804 INFO [main] liquibase.changelog.null Columns metadata(longtext) added to APP_RELATION
+06-Jan-2025 14:08:31.805 INFO [main] liquibase.changelog.null ChangeSet META-INF/liquibase/db-changelog-onpremise.xml::7::activiti ran successfully in 34ms
+06-Jan-2025 14:08:31.822 INFO [main] liquibase.changelog.null Column MODEL_RELATION.type renamed to relation_type
+06-Jan-2025 14:08:31.827 INFO [main] liquibase.changelog.null Column APP_RELATION.type renamed to relation_type
+06-Jan-2025 14:08:31.828 INFO [main] liquibase.changelog.null ChangeSet META-INF/liquibase/db-changelog-onpremise.xml::8::activiti ran successfully in 11ms
+06-Jan-2025 14:08:31.870 INFO [main] liquibase.changelog.null Columns tenant_id(bigint) added to RUNTIME_APP_DEF
+06-Jan-2025 14:08:31.872 INFO [main] liquibase.changelog.null ChangeSet META-INF/liquibase/db-changelog-onpremise.xml::9::activiti ran successfully in 29ms
+06-Jan-2025 14:08:31.892 INFO [main] liquibase.changelog.null Column ENDPOINT_CONFIGURATION.path renamed to pathuri
+06-Jan-2025 14:08:31.894 INFO [main] liquibase.changelog.null ChangeSet META-INF/liquibase/db-changelog-onpremise.xml::10::activiti ran successfully in 8ms
+06-Jan-2025 14:08:31.924 INFO [main] liquibase.changelog.null Table SAVED_FORM created
+06-Jan-2025 14:08:31.931 INFO [main] liquibase.changelog.null Index idx_savedform_form_id created
+06-Jan-2025 14:08:31.939 INFO [main] liquibase.changelog.null Index idx_savedform_task_id created
+06-Jan-2025 14:08:31.940 INFO [main] liquibase.changelog.null ChangeSet META-INF/liquibase/db-changelog-onpremise.xml::11::activiti ran successfully in 28ms
+06-Jan-2025 14:08:31.974 INFO [main] liquibase.changelog.null Table GROUP_RELATION created
+06-Jan-2025 14:08:31.989 INFO [main] liquibase.changelog.null Foreign key constraint added to GROUP_RELATION (group_id)
+06-Jan-2025 14:08:31.997 INFO [main] liquibase.changelog.null Foreign key constraint added to GROUP_RELATION (related_group_id)
+06-Jan-2025 14:08:31.998 INFO [main] liquibase.changelog.null ChangeSet META-INF/liquibase/db-changelog-onpremise.xml::12::activiti ran successfully in 29ms
+06-Jan-2025 14:08:32.056 INFO [main] liquibase.changelog.null PERSISTENT_TOKEN.token_date datatype was changed to datetime(6)
+06-Jan-2025 14:08:32.062 INFO [main] liquibase.changelog.null ChangeSet META-INF/liquibase/db-changelog-onpremise.xml::13::activiti ran successfully in 43ms
+06-Jan-2025 14:08:32.108 INFO [main] liquibase.changelog.null Table CHECKLIST_ORDER created
+06-Jan-2025 14:08:32.113 INFO [main] liquibase.changelog.null Index idx_checklist_order_task_id created
+06-Jan-2025 14:08:32.119 INFO [main] liquibase.changelog.null Index idx_checklist_order_process_id created
+06-Jan-2025 14:08:32.120 INFO [main] liquibase.changelog.null ChangeSet META-INF/liquibase/db-changelog-onpremise.xml::14::activiti ran successfully in 23ms
+06-Jan-2025 14:08:32.152 INFO [main] liquibase.changelog.null Table USER_FILTER created
+06-Jan-2025 14:08:32.157 INFO [main] liquibase.changelog.null Index idx_userfilter_user_id created
+06-Jan-2025 14:08:32.158 INFO [main] liquibase.changelog.null ChangeSet META-INF/liquibase/db-changelog-onpremise.xml::15::activiti ran successfully in 22ms
+06-Jan-2025 14:08:32.199 INFO [main] liquibase.changelog.null Columns stencil_set_id(bigint) added to FORM
+06-Jan-2025 14:08:32.208 INFO [main] liquibase.changelog.null Index idx_form_stencil_set_id created
+06-Jan-2025 14:08:32.213 INFO [main] liquibase.changelog.null ChangeSet META-INF/liquibase/db-changelog-onpremise.xml::16::activiti ran successfully in 38ms
+06-Jan-2025 14:08:32.248 INFO [main] liquibase.changelog.null Table SCRIPT_FILE created
+06-Jan-2025 14:08:32.252 INFO [main] liquibase.changelog.null Index idx_script_stencil_set_id created
+06-Jan-2025 14:08:32.254 INFO [main] liquibase.changelog.null Index idx_script_tenant_id created
+06-Jan-2025 14:08:32.255 INFO [main] liquibase.changelog.null ChangeSet META-INF/liquibase/db-changelog-onpremise.xml::17::activiti ran successfully in 18ms
+06-Jan-2025 14:08:32.299 INFO [main] liquibase.changelog.null Table DOCUMENT_TEMPLATE created
+06-Jan-2025 14:08:32.308 INFO [main] liquibase.changelog.null Foreign key constraint added to DOCUMENT_TEMPLATE (tenant_id)
+06-Jan-2025 14:08:32.315 INFO [main] liquibase.changelog.null Foreign key constraint added to DOCUMENT_TEMPLATE (created_by)
+06-Jan-2025 14:08:32.322 INFO [main] liquibase.changelog.null Table RUNTIME_DOCUMENT_TEMPLATE created
+06-Jan-2025 14:08:32.324 INFO [main] liquibase.changelog.null ChangeSet META-INF/liquibase/db-changelog-onpremise.xml::18::activiti ran successfully in 42ms
+06-Jan-2025 14:08:32.357 INFO [main] liquibase.changelog.null Columns store_id(varchar(255)) added to SCRIPT_FILE
+06-Jan-2025 14:08:32.381 INFO [main] liquibase.changelog.null Column SCRIPT_FILE.filecontent dropped
+06-Jan-2025 14:08:32.382 INFO [main] liquibase.changelog.null ChangeSet META-INF/liquibase/db-changelog-onpremise.xml::19::activiti ran successfully in 44ms
+06-Jan-2025 14:08:32.394 INFO [main] liquibase.changelog.null Column USER_FILTER.type renamed to filter_type
+06-Jan-2025 14:08:32.394 INFO [main] liquibase.changelog.null ChangeSet META-INF/liquibase/db-changelog-onpremise.xml::20::activiti ran successfully in 3ms
+06-Jan-2025 14:08:32.422 INFO [main] liquibase.changelog.null Columns secret(varchar(255)) added to ALFRESCO_ENDPOINT
+06-Jan-2025 14:08:32.423 INFO [main] liquibase.changelog.null ChangeSet META-INF/liquibase/db-changelog-onpremise.xml::21::activiti ran successfully in 20ms
+06-Jan-2025 14:08:32.455 INFO [main] liquibase.changelog.null Columns version(varchar(255)) added to ALFRESCO_ENDPOINT
+06-Jan-2025 14:08:32.456 INFO [main] liquibase.changelog.null ChangeSet META-INF/liquibase/db-changelog-onpremise.xml::22::activiti ran successfully in 22ms
+06-Jan-2025 14:08:32.471 INFO [main] liquibase.changelog.null USERS.first_name datatype was changed to varchar(255)
+06-Jan-2025 14:08:32.474 INFO [main] liquibase.changelog.null USERS.last_name datatype was changed to varchar(255)
+06-Jan-2025 14:08:32.475 INFO [main] liquibase.changelog.null USERS.email datatype was changed to varchar(255)
+06-Jan-2025 14:08:32.476 INFO [main] liquibase.changelog.null ChangeSet META-INF/liquibase/db-changelog-onpremise.xml::23::activiti ran successfully in 7ms
+06-Jan-2025 14:08:32.498 INFO [main] liquibase.changelog.null Table TENANT_CONFIG created
+06-Jan-2025 14:08:32.501 INFO [main] liquibase.changelog.null Index idx_tenant_config_tenant_id created
+06-Jan-2025 14:08:32.508 INFO [main] liquibase.changelog.null Foreign key constraint added to TENANT_CONFIG (tenant_id)
+06-Jan-2025 14:08:32.509 INFO [main] liquibase.changelog.null ChangeSet META-INF/liquibase/db-changelog-onpremise.xml::24::activiti ran successfully in 16ms
+06-Jan-2025 14:08:32.527 INFO [main] liquibase.changelog.null Table DMN_DEPLOYMENT created
+06-Jan-2025 14:08:32.531 INFO [main] liquibase.changelog.null Table DMN_DEPLOYMENT_RESOURCE created
+06-Jan-2025 14:08:32.536 INFO [main] liquibase.changelog.null Table DMN_DECISION_TABLE created
+06-Jan-2025 14:08:32.537 INFO [main] liquibase.changelog.null ChangeSet META-INF/liquibase/db-changelog-onpremise.xml::25::activiti ran successfully in 15ms
+06-Jan-2025 14:08:32.559 INFO [main] liquibase.changelog.null Columns dmn_deployment_id(bigint) added to RUNTIME_APP_DEPLOYMENT
+06-Jan-2025 14:08:32.560 INFO [main] liquibase.changelog.null ChangeSet META-INF/liquibase/db-changelog-onpremise.xml::26::activiti ran successfully in 13ms
+06-Jan-2025 14:08:32.583 INFO [main] liquibase.changelog.null Table RUNTIME_DECISION_AUDIT created
+06-Jan-2025 14:08:32.584 INFO [main] liquibase.changelog.null ChangeSet META-INF/liquibase/db-changelog-onpremise.xml::27::activiti ran successfully in 12ms
+06-Jan-2025 14:08:32.618 INFO [main] liquibase.changelog.null Columns version(int) added to RUNTIME_APP_DEF
+06-Jan-2025 14:08:32.619 INFO [main] liquibase.changelog.null ChangeSet META-INF/liquibase/db-changelog-onpremise.xml::28::activiti ran successfully in 27ms
+06-Jan-2025 14:08:32.693 INFO [main] liquibase.changelog.null Columns tenant_id(bigint),content_id(varchar(4000)),execution_time_stamp(timestamp(6)) added to IDM_SYNC_LOG
+06-Jan-2025 14:08:33.146 INFO [main] liquibase.changelog.null Column IDM_SYNC_LOG.info dropped
+06-Jan-2025 14:08:33.219 INFO [main] liquibase.changelog.null ChangeSet META-INF/liquibase/db-changelog-onpremise.xml::29::activiti ran successfully in 570ms
+06-Jan-2025 14:08:33.559 INFO [main] liquibase.changelog.null Table RUNTIME_SCRIPT_FILE created
+06-Jan-2025 14:08:33.568 INFO [main] liquibase.changelog.null Index idx_rt_script_stencil_set_id created
+06-Jan-2025 14:08:33.579 INFO [main] liquibase.changelog.null Index idx_rt_script_tenant_id created
+06-Jan-2025 14:08:33.581 INFO [main] liquibase.changelog.null ChangeSet META-INF/liquibase/db-changelog-onpremise.xml::30::activiti ran successfully in 71ms
+06-Jan-2025 14:08:33.630 INFO [main] liquibase.changelog.null Columns script_id(bigint) added to RUNTIME_SCRIPT_FILE
+06-Jan-2025 14:08:33.632 INFO [main] liquibase.changelog.null ChangeSet META-INF/liquibase/db-changelog-onpremise.xml::31::activiti ran successfully in 32ms
+06-Jan-2025 14:08:33.726 INFO [main] liquibase.changelog.null Columns request_headers(longtext) added to ENDPOINT_CONFIGURATION
+06-Jan-2025 14:08:33.727 INFO [main] liquibase.changelog.null ChangeSet META-INF/liquibase/db-changelog-onpremise.xml::32::activiti ran successfully in 75ms
+06-Jan-2025 14:08:33.825 INFO [main] liquibase.changelog.null Index idx_rt_script_stencil_set_id dropped from table RUNTIME_SCRIPT_FILE
+06-Jan-2025 14:08:33.887 INFO [main] liquibase.changelog.null Column RUNTIME_SCRIPT_FILE.stencil_set_id dropped
+06-Jan-2025 14:08:33.888 INFO [main] liquibase.changelog.null ChangeSet META-INF/liquibase/db-changelog-onpremise.xml::33::activiti ran successfully in 138ms
+06-Jan-2025 14:08:33.934 INFO [main] liquibase.changelog.null Column ENDPOINT_BASIC_AUTH.password renamed to auth_password
+06-Jan-2025 14:08:33.935 INFO [main] liquibase.changelog.null ChangeSet META-INF/liquibase/db-changelog-onpremise.xml::34::activiti ran successfully in 12ms
+06-Jan-2025 14:08:33.971 INFO [main] liquibase.changelog.null Table DATA_SOURCE created
+06-Jan-2025 14:08:33.978 INFO [main] liquibase.changelog.null Index idx_data_source_tenant_id created
+06-Jan-2025 14:08:34.004 INFO [main] liquibase.changelog.null Foreign key constraint added to DATA_SOURCE (tenant_id)
+06-Jan-2025 14:08:34.005 INFO [main] liquibase.changelog.null ChangeSet META-INF/liquibase/db-changelog-onpremise.xml::35::activiti ran successfully in 48ms
+06-Jan-2025 14:08:34.042 INFO [main] liquibase.changelog.null Table RUNTIME_DATA_MODEL created
+06-Jan-2025 14:08:34.046 INFO [main] liquibase.changelog.null ChangeSet META-INF/liquibase/db-changelog-onpremise.xml::36::activiti ran successfully in 19ms
+06-Jan-2025 14:08:34.079 INFO [main] liquibase.changelog.null Table EMAIL_TEMPLATE created
+06-Jan-2025 14:08:34.086 INFO [main] liquibase.changelog.null Foreign key constraint added to EMAIL_TEMPLATE (tenant_id)
+06-Jan-2025 14:08:34.093 INFO [main] liquibase.changelog.null Foreign key constraint added to EMAIL_TEMPLATE (created_by)
+06-Jan-2025 14:08:34.094 INFO [main] liquibase.changelog.null ChangeSet META-INF/liquibase/db-changelog-onpremise.xml::37::activiti ran successfully in 23ms
+06-Jan-2025 14:08:34.112 INFO [main] liquibase.changelog.null Table LICENSE created
+06-Jan-2025 14:08:34.116 INFO [main] liquibase.changelog.null ChangeSet META-INF/liquibase/db-changelog-onpremise.xml::38::activiti ran successfully in 10ms
+06-Jan-2025 14:08:34.161 INFO [main] liquibase.changelog.null Columns tenant_id(bigint) added to MODEL
+06-Jan-2025 14:08:34.180 INFO [main] liquibase.changelog.null Columns tenant_id(bigint) added to MODEL_HISTORY
+06-Jan-2025 14:08:34.184 INFO [main] liquibase.changelog.null Index idx_model_tenant_id created
+06-Jan-2025 14:08:34.187 INFO [main] liquibase.changelog.null Index idx_model_history_tenant_id created
+06-Jan-2025 14:08:34.188 INFO [main] liquibase.changelog.null ChangeSet META-INF/liquibase/db-changelog-onpremise.xml::39::activiti ran successfully in 55ms
+06-Jan-2025 14:08:34.313 INFO [main] liquibase.changelog.null Custom SQL executed
+06-Jan-2025 14:08:34.327 INFO [main] liquibase.changelog.null Custom SQL executed
+06-Jan-2025 14:08:34.331 INFO [main] liquibase.changelog.null ChangeSet META-INF/liquibase/db-changelog-onpremise.xml::40::activiti ran successfully in 131ms
+06-Jan-2025 14:08:34.411 INFO [main] liquibase.changelog.null Columns manager_group_id(bigint) added to GROUPS
+06-Jan-2025 14:08:34.431 INFO [main] liquibase.changelog.null Foreign key constraint added to GROUPS (manager_group_id)
+06-Jan-2025 14:08:34.434 INFO [main] liquibase.changelog.null Index idx_groups_manager_group_id created
+06-Jan-2025 14:08:34.446 INFO [main] liquibase.changelog.null Foreign key fk_user_manager dropped
+06-Jan-2025 14:08:34.504 INFO [main] liquibase.changelog.null Column USERS.manager_user_id dropped
+06-Jan-2025 14:08:34.570 INFO [main] liquibase.changelog.null Columns primary_group_id(bigint) added to USERS
+06-Jan-2025 14:08:34.584 INFO [main] liquibase.changelog.null Foreign key constraint added to USERS (primary_group_id)
+06-Jan-2025 14:08:34.592 INFO [main] liquibase.changelog.null Index idx_users_primary_group_id created
+06-Jan-2025 14:08:34.593 INFO [main] liquibase.changelog.null ChangeSet META-INF/liquibase/db-changelog-onpremise.xml::41::activiti ran successfully in 226ms
+06-Jan-2025 14:08:34.886 INFO [main] liquibase.changelog.null Columns tenant_id(bigint) added to FORM
+06-Jan-2025 14:08:34.916 INFO [main] liquibase.changelog.null Columns tenant_id(bigint) added to SUBMITTED_FORM
+06-Jan-2025 14:08:34.953 INFO [main] liquibase.changelog.null Columns tenant_id(bigint) added to SAVED_FORM
+06-Jan-2025 14:08:34.962 INFO [main] liquibase.changelog.null Index idx_form_tenant_id created
+06-Jan-2025 14:08:34.966 INFO [main] liquibase.changelog.null Index idx_submitted_form_tenant_id created
+06-Jan-2025 14:08:34.969 INFO [main] liquibase.changelog.null Index idx_saved_form_tenant_id created
+06-Jan-2025 14:08:34.971 INFO [main] liquibase.changelog.null ChangeSet META-INF/liquibase/db-changelog-onpremise.xml::42::activiti ran successfully in 165ms
+06-Jan-2025 14:08:35.014 INFO [main] liquibase.changelog.null Custom SQL executed
+06-Jan-2025 14:08:35.024 INFO [main] liquibase.changelog.null Custom SQL executed
+06-Jan-2025 14:08:35.049 INFO [main] liquibase.changelog.null Custom SQL executed
+06-Jan-2025 14:08:35.051 INFO [main] liquibase.changelog.null ChangeSet META-INF/liquibase/db-changelog-onpremise.xml::43::activiti ran successfully in 55ms
+06-Jan-2025 14:08:35.119 INFO [main] liquibase.changelog.null Unique constraint added to USERS(external_id)
+06-Jan-2025 14:08:35.121 INFO [main] liquibase.changelog.null ChangeSet META-INF/liquibase/db-changelog-onpremise.xml::44::activiti ran successfully in 33ms
+06-Jan-2025 14:08:35.184 INFO [main] liquibase.changelog.null Columns tenant_id(bigint) added to PERSISTENT_TOKEN
+06-Jan-2025 14:08:35.194 INFO [main] liquibase.changelog.null Foreign key fk_user_persistent_token dropped
+06-Jan-2025 14:08:35.196 INFO [main] liquibase.changelog.null ChangeSet META-INF/liquibase/db-changelog-onpremise.xml::47::activiti ran successfully in 63ms
+06-Jan-2025 14:08:35.230 INFO [main] liquibase.changelog.null Columns msmt_tenant_id(bigint) added to TENANT
+06-Jan-2025 14:08:35.231 INFO [main] liquibase.changelog.null ChangeSet META-INF/liquibase/db-changelog-onpremise.xml::48::activiti ran successfully in 24ms
+06-Jan-2025 14:08:35.254 INFO [main] liquibase.changelog.null Columns app_id(bigint) added to REPORT_DEFINITION
+06-Jan-2025 14:08:35.255 INFO [main] liquibase.changelog.null ChangeSet META-INF/liquibase/db-changelog-onpremise.xml::49::activiti ran successfully in 15ms
+06-Jan-2025 14:08:35.309 INFO [main] liquibase.changelog.null Table RUNTIME_APP_GROUPS created
+06-Jan-2025 14:08:35.344 INFO [main] liquibase.changelog.null Foreign key constraint added to RUNTIME_APP_GROUPS (app_definition)
+06-Jan-2025 14:08:35.354 INFO [main] liquibase.changelog.null Foreign key constraint added to RUNTIME_APP_GROUPS (app_group)
+06-Jan-2025 14:08:35.357 INFO [main] liquibase.changelog.null Index idx_runtime_app_groups_app_def created
+06-Jan-2025 14:08:35.359 INFO [main] liquibase.changelog.null Index idx_runtime_app_groups_group created
+06-Jan-2025 14:08:35.360 INFO [main] liquibase.changelog.null ChangeSet META-INF/liquibase/db-changelog-onpremise.xml::50::denys.vuika ran successfully in 58ms
+06-Jan-2025 14:08:35.385 INFO [main] liquibase.changelog.null Data updated in GROUPS
+06-Jan-2025 14:08:35.386 INFO [main] liquibase.changelog.null ChangeSet META-INF/liquibase/db-changelog-onpremise.xml::51::liquibase-docs ran successfully in 5ms
+06-Jan-2025 14:08:35.419 INFO [main] liquibase.changelog.null Columns authentication_type(varchar(64)) added to ALFRESCO_ENDPOINT
+06-Jan-2025 14:08:35.427 INFO [main] liquibase.changelog.null Data updated in ALFRESCO_ENDPOINT
+06-Jan-2025 14:08:35.439 INFO [main] liquibase.changelog.null Data updated in ALFRESCO_ENDPOINT
+06-Jan-2025 14:08:35.444 INFO [main] liquibase.changelog.null Data updated in ALFRESCO_ENDPOINT
+06-Jan-2025 14:08:35.450 INFO [main] liquibase.changelog.null USER_ACCOUNT.access_token datatype was changed to varchar(4000)
+06-Jan-2025 14:08:35.453 INFO [main] liquibase.changelog.null USER_ACCOUNT.refresh_token datatype was changed to varchar(4000)
+06-Jan-2025 14:08:35.454 INFO [main] liquibase.changelog.null ChangeSet META-INF/liquibase/db-changelog-onpremise.xml::52::activiti ran successfully in 55ms
+06-Jan-2025 14:08:35.505 INFO [main] liquibase.changelog.null Columns sites_folder(varchar(255)) added to ALFRESCO_ENDPOINT
+06-Jan-2025 14:08:35.510 INFO [main] liquibase.changelog.null Data updated in ALFRESCO_ENDPOINT
+06-Jan-2025 14:08:35.511 INFO [main] liquibase.changelog.null ChangeSet META-INF/liquibase/db-changelog-onpremise.xml::53::activiti ran successfully in 41ms
+06-Jan-2025 14:08:35.522 INFO [main] liquibase.changelog.null null
+06-Jan-2025 14:08:35.522 INFO [main] liquibase.changelog.null ChangeSet META-INF/liquibase/db-changelog-onpremise.xml::54::activiti ran successfully in 4ms
+06-Jan-2025 14:08:35.538 INFO [main] liquibase.changelog.null Table GROUPS renamed to APS_GROUP
+06-Jan-2025 14:08:35.549 INFO [main] liquibase.changelog.null ChangeSet META-INF/liquibase/db-changelog-onpremise.xml::55::activiti ran successfully in 10ms
+06-Jan-2025 14:08:35.574 INFO [main] liquibase.changelog.null Data updated in hibernate_sequences
+06-Jan-2025 14:08:35.575 INFO [main] liquibase.changelog.null ChangeSet META-INF/liquibase/db-changelog-onpremise.xml::56::activiti ran successfully in 14ms
+06-Jan-2025 14:08:35.591 INFO [main] liquibase.changelog.null Data updated in USER_FILTER
+06-Jan-2025 14:08:35.592 INFO [main] liquibase.changelog.null ChangeSet META-INF/liquibase/db-changelog-onpremise.xml::57::activiti ran successfully in 4ms
+06-Jan-2025 14:08:35.654 INFO [main] liquibase.changelog.null Columns deactivation_origin(smallint) added to USERS
+06-Jan-2025 14:08:35.655 INFO [main] liquibase.changelog.null ChangeSet META-INF/liquibase/db-changelog-onpremise.xml::58::activiti ran successfully in 55ms
+06-Jan-2025 14:08:35.724 INFO [main] liquibase.util.null UPDATE SUMMARY
+06-Jan-2025 14:08:35.733 INFO [main] liquibase.util.null Run:                         56
+06-Jan-2025 14:08:35.737 INFO [main] liquibase.util.null Previously run:               0
+06-Jan-2025 14:08:35.740 INFO [main] liquibase.util.null Filtered out:                 4
+06-Jan-2025 14:08:35.741 INFO [main] liquibase.util.null -------------------------------
+06-Jan-2025 14:08:35.742 INFO [main] liquibase.util.null Total change sets:           60
+
+06-Jan-2025 14:08:35.764 INFO [main] liquibase.util.null 
+FILTERED CHANGE SETS SUMMARY
+
+06-Jan-2025 14:08:35.774 INFO [main] liquibase.util.null DBMS mismatch:                4
+06-Jan-2025 14:08:35.784 INFO [main] liquibase.util.null    'META-INF/liquibase/db-changelog-onpremise.xml::1.1::activiti' : mismatched DBMS value of 'mssql'
+06-Jan-2025 14:08:35.784 INFO [main] liquibase.util.null    'META-INF/liquibase/db-changelog-onpremise.xml::10.1::activiti' : mismatched DBMS value of 'db2'
+06-Jan-2025 14:08:35.784 INFO [main] liquibase.util.null    'META-INF/liquibase/db-changelog-onpremise.xml::45::activiti' : mismatched DBMS value of 'db2'
+06-Jan-2025 14:08:35.784 INFO [main] liquibase.util.null    'META-INF/liquibase/db-changelog-onpremise.xml::46::activiti' : mismatched DBMS value of 'mssql'
+06-Jan-2025 14:08:35.785 INFO [main] liquibase.util.null Update summary generated
+06-Jan-2025 14:08:35.795 INFO [main] liquibase.command.null Update command completed successfully.
+06-Jan-2025 14:08:35.806 INFO [main] liquibase.lockservice.null Successfully released change log lock
+06-Jan-2025 14:08:35.807 INFO [main] liquibase.command.null Command execution complete
+06-Jan-2025 14:09:58.327 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/usr/local/tomcat/webapps/activiti-app] has finished in [157,106] ms
+06-Jan-2025 14:09:58.382 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+06-Jan-2025 14:09:58.459 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [158146] milliseconds

@@ -45,3 +45,7 @@
 06-Jan-2025 13:54:50.344 INFO [main] org.apache.catalina.core.ApplicationContext.log Initializing Spring embedded WebApplicationContext
 06-Jan-2025 13:56:24.070 INFO [main] org.apache.catalina.core.ApplicationContext.log Initializing Spring DispatcherServlet 'apiDispatcher'
 06-Jan-2025 13:56:27.621 INFO [main] org.apache.catalina.core.ApplicationContext.log Initializing Spring DispatcherServlet 'appDispatcher'
+06-Jan-2025 14:07:32.227 INFO [main] org.apache.catalina.core.ApplicationContext.log 1 Spring WebApplicationInitializers detected on classpath
+06-Jan-2025 14:08:12.303 INFO [main] org.apache.catalina.core.ApplicationContext.log Initializing Spring embedded WebApplicationContext
+06-Jan-2025 14:09:51.758 INFO [main] org.apache.catalina.core.ApplicationContext.log Initializing Spring DispatcherServlet 'apiDispatcher'
+06-Jan-2025 14:09:55.553 INFO [main] org.apache.catalina.core.ApplicationContext.log Initializing Spring DispatcherServlet 'appDispatcher'
