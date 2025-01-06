@@ -33,3 +33,15 @@
 06-Jan-2025 13:21:18.147 INFO [main] org.apache.catalina.core.ApplicationContext.log Initializing Spring embedded WebApplicationContext
 06-Jan-2025 13:22:49.474 INFO [main] org.apache.catalina.core.ApplicationContext.log Initializing Spring DispatcherServlet 'apiDispatcher'
 06-Jan-2025 13:22:53.210 INFO [main] org.apache.catalina.core.ApplicationContext.log Initializing Spring DispatcherServlet 'appDispatcher'
+06-Jan-2025 13:41:25.439 INFO [main] org.apache.catalina.core.ApplicationContext.log 1 Spring WebApplicationInitializers detected on classpath
+06-Jan-2025 13:41:59.843 INFO [main] org.apache.catalina.core.ApplicationContext.log Initializing Spring embedded WebApplicationContext
+06-Jan-2025 13:43:29.955 INFO [main] org.apache.catalina.core.ApplicationContext.log Initializing Spring DispatcherServlet 'apiDispatcher'
+06-Jan-2025 13:43:34.027 INFO [main] org.apache.catalina.core.ApplicationContext.log Initializing Spring DispatcherServlet 'appDispatcher'
+06-Jan-2025 13:50:14.866 INFO [main] org.apache.catalina.core.ApplicationContext.log 1 Spring WebApplicationInitializers detected on classpath
+06-Jan-2025 13:50:50.691 INFO [main] org.apache.catalina.core.ApplicationContext.log Initializing Spring embedded WebApplicationContext
+06-Jan-2025 13:52:17.095 INFO [main] org.apache.catalina.core.ApplicationContext.log Initializing Spring DispatcherServlet 'apiDispatcher'
+06-Jan-2025 13:52:21.151 INFO [main] org.apache.catalina.core.ApplicationContext.log Initializing Spring DispatcherServlet 'appDispatcher'
+06-Jan-2025 13:54:14.973 INFO [main] org.apache.catalina.core.ApplicationContext.log 1 Spring WebApplicationInitializers detected on classpath
+06-Jan-2025 13:54:50.344 INFO [main] org.apache.catalina.core.ApplicationContext.log Initializing Spring embedded WebApplicationContext
+06-Jan-2025 13:56:24.070 INFO [main] org.apache.catalina.core.ApplicationContext.log Initializing Spring DispatcherServlet 'apiDispatcher'
+06-Jan-2025 13:56:27.621 INFO [main] org.apache.catalina.core.ApplicationContext.log Initializing Spring DispatcherServlet 'appDispatcher'
