@@ -1,1 +1,3 @@
-.DS_STORE
+# System Files
+.DS_Store
+Thumbs.db
