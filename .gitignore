@@ -1,3 +1,6 @@
 # System Files
 .DS_Store
 Thumbs.db
+# ignore logs
+**/logs/**/*.log
+**/logs/**/*.txt
