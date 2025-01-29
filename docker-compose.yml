@@ -178,6 +178,7 @@ services:
       - "traefik.http.routers.proxiedsolrapideny.rule=PathRegexp(`^/share/proxy/alfresco(-(noauth|feed|api))?/api/solr/`)"
       - "traefik.http.middlewares.sharefakeauth.basicauth.users=fake:"
       - "traefik.http.routers.proxiedsolrapideny.middlewares=sharefakeauth@docker"
+
   postgres:
     image: postgres:14.4
     mem_limit: 512m
@@ -186,11 +187,12 @@ services:
       - POSTGRES_USER=alfresco
       - POSTGRES_DB=alfresco
       #- PGDATA=/var/lib/postgresql/data
-    command: postgres -c max_connections=300 -c log_min_messages=LOG
+    command: "postgres -c max_connections=300 -c log_min_messages=LOG"
     ports:
       - "5432:5432"
-    #volumes:
-    #- ./data/services/postgres/data:/var/lib/postgresql/data
+    volumes:
+      #- ./data/services/postgres/data:/var/lib/postgresql/data
+      - ./data/services/postgres/create_database.sql:/docker-entrypoint-initdb.d/create_database.sql
     healthcheck:
       test: ["CMD-SHELL", "pg_isready -d $$POSTGRES_DB -U $$POSTGRES_USER"]
       interval: 10s
@@ -445,15 +447,21 @@ services:
       - 8094:8080
     depends_on:
       - postgres
+    environment:
+      - EXTERNAL_ACTIVITI_APP_PROPERTIES_FILE=activiti-app.properties
     volumes:
       # APS storage, such as files attached to in-flight workflows
       #- $(pwd)\data\services\process\tomcatdata:/usr/local/tomcat/bin/data/
       # Log storage
       - ./data/services/process/logs:/usr/local/tomcat/logs/
       # APS properties exposed to the host
-      - ./data/services/process/configs/activiti-app/activiti-app.properties:/usr/local/tomcat/webapps/activiti-app/WEB-INF/classes/META-INF/activiti-app/activiti-app.properties
+      - ./data/services/process/configs/activiti-app/activiti-app.properties:/usr/local/tomcat/lib/activiti-app.properties
   processadmin:
     image: alfresco/process-services-admin:24.1.0
+    environment:
+      - ACTIVITI_ADMIN_EXTERNAL_PROPERTIES_FILE=activiti-admin.properties
+    volumes:
+      - ./data/services/process/configs/activiti-admin/activiti-admin.properties:/usr/local/tomcat/lib/activiti-admin.properties
     ports:
       - 8096:8080
   chimera:
