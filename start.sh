@@ -2,6 +2,8 @@
 
 # start the container stack
 # (assumes the caller has permission to do this)
+open -a docker
+
 docker-compose up -d
 
 # wait for the service to be ready
