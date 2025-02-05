@@ -497,6 +497,9 @@ services:
       - "traefik.http.middlewares.fplroot.stripprefix.prefixes=/fileplanupload"
       - "traefik.http.middlewares.fplchain.chain.middlewares=fplforceslash,fplroot"
       - "traefik.http.routers.fpl.middlewares=fplchain@docker"
+    depends_on:
+      alfresco:
+        condition: service_healthy
   queryalfapi:
     image: wildsdocker/queryalfapi:v3
     ports:
@@ -511,6 +514,9 @@ services:
     volumes:
       # downloaded shards
       - ./data/LLMs/:/root/.cache/
+    depends_on:
+      alfresco:
+        condition: service_healthy
     environment:
       BASE_URL: "http://alfresco:8080"
       API_URL: "/static/swagger.json"
@@ -531,6 +537,7 @@ services:
       llama_vision_model: "unsloth/Llama-3.2-11B-Vision-Instruct"
       llama_chat_repo: "hugging-quants/Llama-3.2-1B-Instruct-Q4_K_M-GGUF"
       llama_chat_filename: "llama-3.2-1b-instruct-q4_k_m.gguf"
+
 volumes:
   shared-file-store-volume:
     driver_opts:

@@ -4,6 +4,8 @@
 # (assumes the caller has permission to do this)
 open -a docker
 
+sleep 5
+
 docker-compose up -d
 
 # wait for the service to be ready
