@@ -6,7 +6,7 @@ open -a docker
 
 sleep 5
 
-docker-compose up -d
+docker compose up -d
 
 # wait for the service to be ready
 while ! curl --fail --silent --head http://localhost:8080; do
