@@ -6,6 +6,8 @@ open -a docker
 
 sleep 5
 
+cd ./Dockercompose/AlfDemo2341
+
 docker compose up -d
 
 # wait for the service to be ready
