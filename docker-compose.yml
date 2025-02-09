@@ -436,6 +436,7 @@ services:
       - "traefik.http.middlewares.syncservice.replacepathregex.regex=^/syncservice/(.*)"
       - "traefik.http.middlewares.syncservice.replacepathregex.replacement=/alfresco/$$1"
       - "traefik.http.routers.syncservice.middlewares=syncservice@docker"
+  ##########CUSTOM SERVICES BELOW##########
   dozzle:
     image: amir20/dozzle:latest
     volumes:
