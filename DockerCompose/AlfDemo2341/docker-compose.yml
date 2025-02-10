@@ -72,14 +72,14 @@ services:
       - "traefik.enable=true"
       - "traefik.http.routers.alfresco.rule=PathPrefix(`/`)"
       - "traefik.http.services.alfresco.loadbalancer.server.port=8080"
-      - "traefik.http.middlewares.limit.buffering.maxRequestBodyBytes=5368709120"
-      - "traefik.http.routers.alfresco.middlewares=limit@docker"
+      #- "traefik.http.middlewares.limit.buffering.maxRequestBodyBytes=5368709120"
+      #- "traefik.http.routers.alfresco.middlewares=limit@docker"
       - "traefik.http.routers.solrapideny.rule=PathRegexp(`^/alfresco/(wc)?s(ervice)?/api/solr/.*$`)"
       - "traefik.http.middlewares.acsfakeauth.basicauth.users=fake:"
       - "traefik.http.routers.solrapideny.middlewares=acsfakeauth@docker"
       - "traefik.http.routers.alfrescomicrometer.rule=PathRegexp(`^/alfresco/(wc)?s(ervice)?/prometheus`)"
-      - "traefik.http.middlewares.prometheusipfilter.ipallowlist.sourcerange=127.0.0.0/8"
-      - "traefik.http.routers.alfrescomicrometer.middlewares=prometheusipfilter@docker"
+      #- "traefik.http.middlewares.prometheusipfilter.ipallowlist.sourcerange=127.0.0.0/8"
+      #- "traefik.http.routers.alfrescomicrometer.middlewares=prometheusipfilter@docker"
   transform-router:
     mem_limit: 512m
     image: quay.io/alfresco/alfresco-transform-router:4.1.6
@@ -175,8 +175,8 @@ services:
       - "traefik.enable=true"
       - "traefik.http.routers.share.rule=PathPrefix(`/share`)"
       - "traefik.http.services.share.loadbalancer.server.port=8080"
-      - "traefik.http.middlewares.limit.buffering.maxRequestBodyBytes=5368709120"
-      - "traefik.http.routers.share.middlewares=limit@docker"
+      #- "traefik.http.middlewares.limit.buffering.maxRequestBodyBytes=5368709120"
+      #- "traefik.http.routers.share.middlewares=limit@docker"
       - "traefik.http.routers.proxiedsolrapideny.rule=PathRegexp(`^/share/proxy/alfresco(-(noauth|feed|api))?/api/solr/`)"
       - "traefik.http.middlewares.sharefakeauth.basicauth.users=fake:"
       - "traefik.http.routers.proxiedsolrapideny.middlewares=sharefakeauth@docker"
@@ -205,8 +205,8 @@ services:
       - xpack.security.enabled=false
       - discovery.type=single-node
       - "_JAVA_OPTIONS=-XX:UseSVE=0"
-      - "ES_JAVA_OPTS: Xms512m -Xmx512m -XX:UseSVE=0"
-      - "CLI_JAVA_OPTS: -XX:UseSVE=0"
+      #- "ES_JAVA_OPTS: Xms512m -Xmx512m -XX:UseSVE=0"
+      #- "CLI_JAVA_OPTS: -XX:UseSVE=0"
     ulimits:
       memlock:
         soft: -1
@@ -451,7 +451,8 @@ services:
     ports:
       - 8094:8080
     depends_on:
-      - postgres
+      alfresco:
+        condition: service_healthy
     environment:
       - EXTERNAL_ACTIVITI_APP_PROPERTIES_FILE=activiti-app.properties
     volumes:
@@ -461,6 +462,13 @@ services:
       - ./data/services/process/logs:/usr/local/tomcat/logs/
       # APS properties exposed to the host
       - ./data/services/process/configs/activiti-app/activiti-app.properties:/usr/local/tomcat/lib/activiti-app.properties
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.process.rule=PathPrefix(`/process`)"
+      - "traefik.http.services.process.loadbalancer.server.port=8080"
+      - "traefik.http.middlewares.process.replacepathregex.regex=^/process/(.*)"
+      - "traefik.http.middlewares.process.replacepathregex.replacement=/activiti-app/#/$$1"
+      - "traefik.http.routers.process.middlewares=process@docker"
   processadmin:
     image: alfresco/process-services-admin:24.1.0
     environment:
