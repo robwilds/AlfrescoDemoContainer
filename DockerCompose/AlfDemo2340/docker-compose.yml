@@ -171,6 +171,8 @@ services:
     depends_on:
       alfresco:
         condition: service_healthy
+    volumes:
+      - ./data/services/share/amps:/usr/local/tomcat/amps_share
     labels:
       - "traefik.enable=true"
       - "traefik.http.routers.share.rule=PathPrefix(`/share`)"
@@ -204,6 +206,7 @@ services:
     environment:
       - xpack.security.enabled=false
       - discovery.type=single-node
+      - "_JAVA_OPTIONS=-XX:UseSVE=0"
       - ES_JAVA_OPTS=-Xms512m -Xmx512m
     ulimits:
       memlock:
