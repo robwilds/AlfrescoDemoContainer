@@ -339,10 +339,10 @@ services:
     image: quay.io/alfresco/alfresco-digital-workspace:5.3.0
     mem_limit: 128m
     environment:
-      APP_CONFIG_PROVIDER: "ECM"
+      APP_CONFIG_PROVIDER: "ALL"
       APP_CONFIG_AUTH_TYPE: "BASIC"
       BASE_PATH: ./
-      APP_CONFIG_PLUGIN_PROCESS_SERVICE: "false"
+      APP_CONFIG_PLUGIN_PROCESS_SERVICE: "true"
       APP_CONFIG_PLUGIN_MICROSOFT_ONLINE: "false"
       APP_BASE_SHARE_URL: "http://localhost:8080/workspace/#/preview/s"
     healthcheck:
