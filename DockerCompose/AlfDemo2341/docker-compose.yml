@@ -54,6 +54,7 @@ services:
         -XX:MaxRAMPercentage=80
     volumes:
       - ./data/services/content/alfresco-global.properties:/usr/local/tomcat/shared/classes/alfresco-global.properties
+      - ./data/services/content/index.jsp:/usr/local/tomcat/webapps/ROOT/index.jsp
       - ./data/services/content/alf_data:/usr/local/tomcat/alf_data/
       - ./data/services/content/amps:/usr/local/tomcat/amps
     healthcheck:
