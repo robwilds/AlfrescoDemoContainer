@@ -459,18 +459,21 @@ services:
       - EXTERNAL_ACTIVITI_APP_PROPERTIES_FILE=activiti-app.properties
     volumes:
       # APS storage, such as files attached to in-flight workflows
-      #- $(pwd)\data\services\process\tomcatdata:/usr/local/tomcat/bin/data/
+      - ./data/services/process/tomcatdata:/usr/local/tomcat/bin/data/
       # Log storage
       - ./data/services/process/logs:/usr/local/tomcat/logs/
       # APS properties exposed to the host
       - ./data/services/process/configs/activiti-app/activiti-app.properties:/usr/local/tomcat/lib/activiti-app.properties
     labels:
       - "traefik.enable=true"
-      - "traefik.http.routers.process.rule=PathPrefix(`/process`)"
+      - "traefik.http.routers.process.rule=PathPrefix(`/activiti-app`)"
+      #- "traefik.http.routers.myapp.rule=Host(`process.local`)"
       - "traefik.http.services.process.loadbalancer.server.port=8080"
-      - "traefik.http.middlewares.process.replacepathregex.regex=^/process/(.*)"
-      - "traefik.http.middlewares.process.replacepathregex.replacement=/activiti-app/#/$$1"
-      - "traefik.http.routers.process.middlewares=process@docker"
+      #- "traefik.http.middlewares.process.stripprefix.prefixes=/process"
+      #- "traefik.http.middlewares.process.replacepathregex.regex=^/process/(.*)"
+      #- "traefik.http.middlewares.process.replacepathregex.replacement=$${1}/activiti-app/#/"
+      #- "traefik.http.middlewares.process.chain.middlewares=stripprefix"
+      #- "traefik.http.routers.process.middlewares=process@docker"
   processadmin:
     image: alfresco/process-services-admin:24.1.0
     environment:
