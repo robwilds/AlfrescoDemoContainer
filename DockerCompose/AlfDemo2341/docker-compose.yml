@@ -57,6 +57,8 @@ services:
       - ./data/services/content/index.jsp:/usr/local/tomcat/webapps/ROOT/index.jsp
       - ./data/services/content/alf_data:/usr/local/tomcat/alf_data/
       - ./data/services/content/amps:/usr/local/tomcat/amps
+      - ./data/services/content/opt:/opt
+      - ./data/services/content/license:/usr/local/tomcat/shared/classes/alfresco/extension/license
     healthcheck:
       test:
         [
