@@ -41,7 +41,7 @@ alfrescoContext.getRequestDispatcher("/AosResponder_ServerRoot"); if(rd != null)
                 border="0" /></a
           ></span>
           <span class="logo-separator">&nbsp;</span>
-          <h1>Welcome to Alfresco</h1>
+          <h1>Welcome to Alfresco Custom List of Services</h1>
         </div>
 
         <div class="index-list">
@@ -54,11 +54,11 @@ alfrescoContext.getRequestDispatcher("/AosResponder_ServerRoot"); if(rd != null)
          <p></p>
           <p><a href="/workspace">Digital Workspace</a></p>
           <p></p>
-          <p><a href="#" onclick="window.location.port=4200;window.location.pathname='/'">Chimera</a></p>
+          <p><a href="#" target="_blank" onclick="window.location.port=4200;window.location.pathname='/'">Chimera</a></p>
           <p></p>
-          <p><a href="/fileplanupload">Custom File Plan Upload (ADW5)</a></p>
+          <p><a href="/fileplanupload" target="_blank">Custom File Plan Upload (ADW5)</a></p>
           <p></p>
-          <p><a href="#" onclick="window.location.port=9600;window.location.pathname='/'">Custom Python Microservice</a></p>
+          <p><a href="#" onclick="window.location.port=9600;window.location.pathname='/'" target="_blank">Custom Python Microservice</a></p>
           <% } else { %>
           <p>
             <b>Cannot find Alfresco Repository on this server.</b> (Does this
