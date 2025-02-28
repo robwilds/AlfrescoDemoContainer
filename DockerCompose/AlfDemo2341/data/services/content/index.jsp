@@ -41,24 +41,28 @@ alfrescoContext.getRequestDispatcher("/AosResponder_ServerRoot"); if(rd != null)
                 border="0" /></a
           ></span>
           <span class="logo-separator">&nbsp;</span>
-          <h1>Welcome to Alfresco Custom List of Services</h1>
+          <h1>Welcome to Alfresco</h1>
         </div>
 
         <div class="index-list">
-          <p><a href="http://docs.alfresco.com/">Online Documentation</a></p>
+          <h2>Core Features</h2>
+          <p><a href="http://docs.alfresco.com/" target="_blank">Online Documentation</a></p>
           <p></p>
           <% if(alfrescoInstalled) { %>
-          <p><a href="/<%=alfrescoContextName%>">Alfresco Repository</a></p>
+          <p><a href="/<%=alfrescoContextName%>" target="_blank">Alfresco Repository</a></p>
           <p></p>
-          <p><a href="/activiti-app">Process Services</a></a></p>
+          <p><a href="/share" target="_blank">Share</a></p>
+          <p></p>
+          <p><a href="/activiti-app" target="_blank">Process Services</a></a></p>
          <p></p>
-          <p><a href="/workspace">Digital Workspace</a></p>
+          <p><a href="/workspace" target="_blank">Digital Workspace</a></p>
           <p></p>
-          <p><a href="#" target="_blank" onclick="window.location.port=4200;window.location.pathname='/'">Chimera</a></p>
+          <h2>Customizations</h2>
+          <p><a href="" onclick="window.open('http://'+ window.location.hostname + ':4200')">Chimera</a></p>
           <p></p>
           <p><a href="/fileplanupload" target="_blank">Custom File Plan Upload (ADW5)</a></p>
           <p></p>
-          <p><a href="#" onclick="window.location.port=9600;window.location.pathname='/'" target="_blank">Custom Python Microservice</a></p>
+          <p><a href="" onclick="window.open('http://'+ window.location.hostname + ':9600')">Custom Python Microservice</a></p>
           <% } else { %>
           <p>
             <b>Cannot find Alfresco Repository on this server.</b> (Does this
@@ -75,4 +79,5 @@ alfrescoContext.getRequestDispatcher("/AosResponder_ServerRoot"); if(rd != null)
       Alfresco Software, Inc. &copy; 2005-2023 All rights reserved.
     </div>
   </body>
+  <script>console.log(window.location.hostname)</script>
 </html>

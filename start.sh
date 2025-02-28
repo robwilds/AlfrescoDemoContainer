@@ -13,16 +13,20 @@ cd ./DockerCompose/AlfDemo2341/data/services/postgres/
 #now extract the postgres database and assume the alf_Data directory is coming down from git
 if [ ! -d "./data/" ]; then
   echo "data directory does not exist...unzipping postgres backup"
-  unzip 'data.zip'
+  unzip data.zip -d data
+else
+  echo "postgres data directory is present...skipping"
 fi
 
 #check alf_data
-# cd ./DockerCompose/AlfDemo2341/data/services/content/
-# #now extract the postgres database and assume the alf_Data directory is coming down from git
-# if [ ! -d "./alf_data/" ]; then
-#   echo "data directory does not exist...unzipping postgres backup"
-#   unzip 'alf_data.zip'
-# fi
+cd ../content/
+#now extract the postgres database and assume the alf_Data directory is coming down from git
+if [ ! -d "./alf_data/" ]; then
+  echo " alfdata directory does not exist...unzipping alf_data backup"
+  unzip alf_data.zip -d alf_data
+else
+  echo "alfdata directory is present...skipping"
+fi
 
 
 cd ./Dockercompose/AlfDemo2341
